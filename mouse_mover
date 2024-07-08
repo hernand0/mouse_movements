@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+# diegoHERNANDO 2023
+
+import mouse 
+import time
+
+# Coordinates
+x = 1350
+y = -664
+
+for x in range(100):
+    mouse.move(x, y, absolute = True, duration = 0.1)
+    mouse.click("left")
+    print("Click", x + 1, "done")
+    x += 1
+    time.sleep(180)
